@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>JSON Server client demo</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <pre id="output"></pre>
-    <div class="form-container">
-      <h2>Form Input Data</h2>
-      <form id="dataForm">
-        <div class="form-group">
-          <label for="name">Nama:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <div class="form-group">
-          <label for="address">Alamat:</label>
-          <input type="text" id="address" name="address" required />
-        </div>
+    <h1>Form Input Data</h1>
+    <form id="dataForm">
+        <input type="text" id="nama" placeholder="Nama" required><br><br>
+        <input type="text" id="alamat" placeholder="Alamat" required><br><br>
+        <input type="text" id="no_hp" placeholder="No HP" required><br><br>
+        <input type="hidden" id="dataId"> <!-- Input tersembunyi untuk ID saat update -->
+        <button type="submit">Kirim Data</button>
+    </form>
 
-        <div class="form-group">
-          <label for="message">Ucapan:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
+    <h2>Data Tersimpan</h2>
+    <button id="fetchDataBtn"></button>
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>No HP</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan dimasukkan di sini -->
+        </tbody>
+    </table>
 
-        <button type="submit" id="submitBtn">Kirim</button>
-      </form>
+    <script src="app.js"></script>
 
-      <div id="result"></div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>

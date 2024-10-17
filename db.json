@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "datas": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nama": "json-server",
+      "alamat": "typicode",
+      "no_hp": "08512345"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nama": "ADO MURTADO",
+      "alamat": "cikalong",
+      "no_hp": "081779262637",
+      "id": 2
+    },
+    {
+      "nama": "jayanti",
+      "alamat": "lampung",
+      "no_hp": "0123123123",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
