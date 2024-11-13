@@ -1,12 +1,13 @@
-// const url = 'https://json-server--3000.local.webcontainer.io/datas';
+const express = require('express');
+const path = require('path');
 
-// fetch(url)
-//   .then((r) => r.json())
-//   .then(
-//     (json) =>
-//       (document.getElementById('output').innerHTML = JSON.stringify(
-//         json,
-//         null,
-//         2
-//       ))
-//   );
+const app = express();
+const PORT = 3000;
+
+// Sajikan file statis dari folder "public"
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Jalankan server
+app.listen(PORT, () => {
+  console.log(`Server berjalan di http://localhost:${PORT}`);
+});
