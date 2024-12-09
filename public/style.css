@@ -50,6 +50,7 @@ body {
   font-size: 16px;
   align-items: center;
   overflow: hidden;
+  text-transform: capitalize;
 }
 .section {
   height: 100vh;
@@ -204,13 +205,19 @@ body {
 }
 .photo-container-hero1 {
   background-color: #3B1C32;
-  border: 4px solid #e4e2e1;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border: 4px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   width: 280px;
-  height: 50px;
+  height: 100px;
   overflow: hidden;
   margin: 0 auto 1.5rem;
+}
+.bapak {
+  color: white;
+  font-size: 19px;
+  font-family: 'Allura';
+  margin-bottom: 16px;
 }
 
 .photo-container-hero img {
@@ -277,11 +284,13 @@ body {
 .hadist p {
   font-family: 'Allura';
   font-size: 1.2rem;
+  text-align: justify;
 }
 .hadist h4 {
   font-family: 'Allura';
   font-size: 1.5rem;
 }
+
 /* info section */
 .info-section {
   background-image: url('img/bgd.webp');
@@ -365,7 +374,9 @@ body {
 
 .button-lok {
   text-decoration: none;
-  color: black;
+  position: relative;
+  height: 300px;
+  background-color: #f9f9f9;
 }
 .button-lok:hover {
   text-decoration: none;
@@ -762,6 +773,18 @@ footer p {
 footer a {
   color: #f1f1f1;
   text-decoration: none;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 footer a:hover {
